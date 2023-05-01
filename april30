@@ -1,0 +1,34 @@
+-- create database RGM;
+create table RGM(
+name varchar(40) primary key not null,
+college varchar(20) not null,
+session varchar(20) not null,
+contactnumber int not null,
+address int  not null
+);
+select * from RGM;
+insert into RGM (name,college,session,contactnumber,address)
+values ("Mahesh","RGMCET","Sql",9666536,123);
+insert into RGM(name,college,session,contactnumber,address)
+values ("Suresh","GPRCET","Python",970324,256);
+insert into RGM(name,college,session,contactnumber,address)
+values ("Ramu","SVR","C++",9666536,543);
+insert into RGM(name,college,session,contactnumber,address)
+values ("jayRamu","AVSVR","C",96536,53);
+insert into RGM(name,college,session,contactnumber,address)
+values ("Ram","SVRM","java",96666,43);
+insert into RGM(name,college,session,contactnumber,address)
+values ("somu","SVRL","JS",966636,543);
+insert into RGM(name,college,session,contactnumber,address)
+values ("Rao","santhiram","C+",9666536,523);
+insert into RGM(name,college,session,contactnumber,address)
+values ("Romu","SKVR","C++",96636,5432);
+insert into RGM(name,college,session,contactnumber,address)
+values ("kohli","St joseph","python",66536,2343);
+insert into RGM(name,college,session,contactnumber,address)
+values ("devilliersu","SVR","C",8766,2893);
+select * from RGM where session="Sql";
+select * from RGM where contactnumber like "9676%";
+select * from RGM where address in (523,2343)
+select * from RGM where college in ("SKVR","SVR")
+select * from RGM where college = "SKVR" or college = "SVR"
